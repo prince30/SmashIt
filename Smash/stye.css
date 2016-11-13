@@ -1,0 +1,95 @@
+body {
+    background-image: url(escheresque_ste_@2X.png);
+    background-repeat: repeat;
+    /*    background-color: cornflowerblue !important;*/
+}
+
+canvas {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    /*    background-image: url(escheresque_ste_@2X.png) repeat;*/
+}
+
+.scoreCounter {
+    margin-top: 50px;
+}
+
+.menu {
+    margin-top: 50px;
+    color: white;
+    top: 500px;
+}
+
+#newgame {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ai,
+.pl {
+    height: 140px;
+    width: 140px;
+    background: url(paisley.png);
+    font-family: fantasy;
+    font-weight: 600;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.level {
+    height: 140px;
+    width: 140px;
+    background: url(paisley.png);
+    font-family: fantasy;
+    font-weight: 600;
+    margin-top: 0;
+    top: 0;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+hr.styled {
+    width: 95%;
+    /*    margin-top: -40px;*/
+    border: 0;
+    border-bottom: 1px dashed black;
+    background: #70A8FF;
+}
+
+.modal-dialog {
+    text-align: center;
+    top: 100px;
+    color: white;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.modal-header {
+    background-image: url(escheresque_ste_@2X.png);
+    background-repeat: repeat;
+}
+
+.modal-body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(sayagata-400px.png);
+    background-repeat: repeat;
+    color: black;
+}
+
+.modal-footer {
+    background-image: url(sayagata-400px.png);
+    background-repeat: repeat;
+}
+.canvasContainer
+{
+      display:block;
+    width:80%;
+    padding:50px 10%;
+/*    height:300px;*/
+}

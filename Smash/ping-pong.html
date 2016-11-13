@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Smash Pong</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src=" https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css " type="text/css " rel="stylesheet">
+    <link href="stye.css " type="text/css " rel="stylesheet ">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row ">
+
+            <div class="col-md-1 scoreCounter pl  text-center">
+                <h1>
+            <i>You  </i><hr class="styled"><span id="pScore"></span>
+        </h1>
+            </div>
+            <div class="col-md-1 col-md-offset-9 scoreCounter ai  text-center">
+                <h1>
+            <i>ME  </i><hr  class="styled"><span id="AiScore"></span>
+        </h1>
+            </div>
+        </div>
+        <div class="row menu ">
+
+            <div class="col-md-2 ">
+                <hr class="styled">
+                <h1>
+               
+            <i>Level : </i><span id="level"></span>
+            <hr class="styled">
+              <button class="btn btn-danger btn-block" type="button" id="newgame">New Game</button>
+            
+            </div>
+            <div class="col-md-2 col-md-offset-8  ">
+
+                <ul>
+                    <li>
+                        <h3>Use UP arrow key to move the paddle UP</h3></li>
+                    <li>
+                        <h3>Use DOWN arrow key to move the paddle DOWN</h3></li>
+                </ul>
+            </div>
+<div class="container canvasContainer">
+      <script type="text/javascript " src="pingpong.js ">
+
+
+            </script>
+</div>
+          
+
+        </div>
+       
+          
+      
+    
+
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title">So, You think you can beat me </h1>
+            </div>
+            <div class="modal-body">
+                <h2>Come On ! Let's have a game</h2>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger btn-block btn-lg" id="startgame" data-dismiss="modal">Let's Smash</button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div id="gameoverModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1 class="modal-title">Game Over</h1>
+                </div>
+                <div class="modal-body" id="winner">
+                    <!--                                           <h2>Oh ! Oh ! <span id="winner"></span> Lost</h2>-->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-block btn-lg" id="tryAgain" onclick="gameover()" data-dismiss="modal">Battle Again</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="nextLevel" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1 class="modal-title">Congratulations !!</h1>
+                </div>
+                <div class="modal-body" id="next">
+                    <!--                       <h2>Oh ! Oh ! <span id="winner"></span> Lost</h2>-->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-block btn-lg" id="Next" onclick="nextLevel()" data-dismiss="modal"></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="gameComplete" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1 class="modal-title">Game Complete</h1>
+                </div>
+                <div class="modal-body" id="Gc">
+                    <!--                       <h2>Oh ! Oh ! <span id="winner"></span> Lost</h2>-->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-block btn-lg" id="again" onclick="reload()" data-dismiss="modal"></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
